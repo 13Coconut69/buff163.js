@@ -1,8 +1,8 @@
-import { goodsArgs, goodsRequest } from "..";
+import { goodsParams, goodsResponse } from "..";
 
 //TODO: add types
 export interface MarketSchema {
-    goods: ({ game, page_num }: goodsArgs) => Promise<goodsRequest>;
+    goods: (params: goodsParams) => Promise<goodsResponse>;
     goodsAll: () => void;
     goodsSellOrder: () => void;
     goodsBuying: () => void;

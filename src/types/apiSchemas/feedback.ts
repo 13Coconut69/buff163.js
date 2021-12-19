@@ -1,4 +1,5 @@
-//TODO: add types;
+import { listParams, listResponse } from "..";
+
 export interface FeedbackSchema {
-    list: () => void;
+    list: (params: listParams) => Promise<listResponse>;
 }

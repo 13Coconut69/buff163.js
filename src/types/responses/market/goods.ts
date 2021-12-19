@@ -1,9 +1,10 @@
-export type goodsArgs = {
+//TODO: expand types
+export type goodsParams = {
     game: "dota2" | "csgo" | "rust" | "h1z1" | "tf2" | "pubg" | "pubg_recycle";
     page_num: number;
 }
 
-export type goodsRequest = {
+export type goodsResponse = {
     code: string;
     msg?: string;
     data: {

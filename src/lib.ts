@@ -69,6 +69,12 @@ class Buff163Instance {
         case "sellOrderTopBookmarked":
             prop = "sell_order/top_bookmarked";
             break;
+        case "messageMessages":
+            prop = "messaage/messages";
+            break;
+        case "benefitMy":
+            prop = "benefit/my/";
+            break;
         }
         return this.sendRequest(`${options.apiBaseUrl}${method}/${String(prop)}?${requestParams}`);
     }
